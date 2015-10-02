@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<configuration>
+
+  <property>
+    <name>yarn.resourcemanager.webapp.address</name>
+    <value>YARN_MASTER:PORT_01</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>YARN_MASTER:PORT_2</value>
+  </property>
+    <property>
+    <name>yarn.resourcemanager.port</name>
+    <value>PORT_2</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.scheduler.address</name>
+    <value>YARN_MASTER:PORT_3</value>
+  </property>
+    <property>
+    <name>yarn.resourcemanager.scheduler.port</name>
+    <value>PORT_3</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.webapp.https.address</name>
+    <value>YARN_MASTER:PORT_4</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value>YARN_MASTER:PORT_5</value>
+  </property>
+   <property>
+    <name>yarn.resourcemanager.resource-tracker.port</name>
+    <value>PORT_5</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.admin.address</name>
+    <value>YARN_MASTER:PORT_6</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.admin.port</name>
+    <value>
+    PORT_6</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.groupMembership.address</name>
+    <value>YARN_MASTER:PORT_10</value>
+  </property>
+  <property>
+    <name>yarn.resourcemanager.groupMembership.port</name>
+    <value>
+    PORT_10</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.address</name>
+    <value>0.0.0.0:PORT_7</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.localizer.address</name>
+    <value>0.0.0.0:PORT_8</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.webapp.address</name>
+    <value>0.0.0.0:PORT_9</value>
+  </property>
+
+  <property>
+    <description>Whether to enable log aggregation</description>
+    <name>yarn.log-aggregation-enable</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.aux-services.mapreduce_shuffle.class</name>
+    <value>org.apache.hadoop.mapred.ShuffleHandler</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.scheduler.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler</value>
+  </property>
+
+   <property>
+    <name>yarn.resourcemanager.ha.automatic-failover.enabled</name>
+    <value>true</value>
+  </property>
+
+ <property>
+    <name>yarn.resourcemanager.ha.enabled</name>
+    <value>true</value>
+  </property>
+<property>
+    <name>yarn.resourcemanager.recovery.enabled</name>
+    <value>true</value>
+  </property>
+<property>
+    <name>yarn.resourcemanager.ha.rm-ids</name>
+    <value>YARN_RMIDS</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.store.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.recovery.NDBRMStateStore</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.store.class</name>
+    <value>org.apache.hadoop.yarn.server.resourcemanager.recovery.NDBRMStateStore</value>
+  </property>
+
+<property>
+    <name>dfs.leader.check.interval</name>
+    <value>1000</value>
+  </property>
+
+<property>
+    <name>yarn.client.failover-sleep-base-ms</name>
+    <value>100</value>
+  </property>
+
+  <property>
+    <name>yarn.client.failover-sleep-max-ms</name>
+    <value>1000</value>
+  </property>
+
+  <property>
+    <name>mapreduce.jobhistory.address</name>
+    <value>cloud3:10020</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>20480</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+    <value>1024</value>
+  </property>
+
+  <property>
+    <name>yarn.nodemanager.vmem-pmem-ratio</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>hops.yarn.resourcemanager.distributed-rt.enable</name>
+    <value>false</value>
+  </property>
+  <property>
+      <name>hops.yarn.resourcemanager.pending-events.retrieval.period</name>
+      <value>1000</value>
+  </property>
+  <property>
+      <name>hops.yarn.resourcemanager.pending-events.batch</name>
+      <value>0</value>
+  </property>

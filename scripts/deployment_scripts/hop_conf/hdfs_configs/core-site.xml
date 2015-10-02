@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<!-- NOTE: PUT HDFS scepicif stuff in hdfs-site.xml -->
+
+
+<configuration>
+
+
+<property>
+  <name>fs.default.name</name>
+  <value>hdfs://NN_MACHINE_NAME:Dfs_Namenode_Rpc_Address_Config_Param</value>
+  <description></description>
+</property>
+
+<property>
+  <name>dfs.namenodes.rpc.addresses</name>
+  <value>NN_RPC_ADDRESS_LIST</value><!-- comma separated -->
+  <description>list of NN used by the clients</description>
+</property>
+
+</configuration>
